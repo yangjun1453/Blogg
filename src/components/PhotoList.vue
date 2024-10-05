@@ -27,9 +27,8 @@
 
 <script setup name="PhotoList">
 import InfoCard from "./InfoCard.vue";
-import assetImport from '../utils/assetImport';
+import assetImport from "../utils/assetImport";
 import { ref } from "vue";
-const BASE_URL =  process.env.NODE_ENV === 'production' ? 'https://yangjun1453.github.io/Blogg/' : new URL(import.meta.url).origin;
 
 let cards = [
   {
@@ -37,14 +36,14 @@ let cards = [
     description:
       "Embark on a visual journey through the majestic mountains. Discover the thrill of hiking trails, the serenity of peaks, and the beauty of nature’s grandeur.",
     images: [
-      assetImport("./group1/IMG_0647.JPG",BASE_URL),
-      new URL("./group1/IMG_0648.JPG",BASE_URL).href,
-      new URL("./group1/IMG_0649.JPG",BASE_URL).href,
-      new URL("./group1/IMG_0650.JPG",BASE_URL).href,
-      new URL("./group1/IMG_0651.JPG",BASE_URL).href,
-      new URL("./group1/IMG_0652.JPG",BASE_URL).href,
-      new URL("./group1/IMG_0654.JPG",BASE_URL).href,
-      "/group1/IMG_0655.JPEG",
+      assetImport("./group1/IMG_0647.JPG"),
+      assetImport("./group1/IMG_0648.JPG"),
+      assetImport("./group1/IMG_0649.JPG"),
+      assetImport("./group1/IMG_0650.JPG"),
+      assetImport("./group1/IMG_0651.JPG"),
+      assetImport("./group1/IMG_0652.JPG"),
+      assetImport("./group1/IMG_0654.JPG"),
+      assetImport("./group1/IMG_0655.JPEG"),
     ],
   },
   {
@@ -57,17 +56,16 @@ let cards = [
     description:
       "Dive into a world where every shot tells a story. Experience photographs with a cinematic flair, invoking the magic and emotion of the silver screen.",
     images: [
-      new URL("./group3/IMG_0656.JPG",BASE_URL).href,
-     
-      new URL("./group3/IMG_0658.JPG",BASE_URL).href,
-      new URL("./group3/IMG_0659.JPG",BASE_URL).href,
-      new URL("./group3/IMG_0660.JPG",BASE_URL).href,
-      new URL("./group3/IMG_0661.JPG",BASE_URL).href,
-      new URL("./group3/IMG_0662.JPG",BASE_URL).href,
-      new URL("./group3/IMG_0663.JPG",BASE_URL).href,
-      new URL("./group3/IMG_0664.JPG",BASE_URL).href,
-      new URL("./group3/IMG_0657.JPG",BASE_URL).href,
- 
+      assetImport("./group3/IMG_0656.JPG"),
+
+      assetImport("./group3/IMG_0658.JPG"),
+      assetImport("./group3/IMG_0659.JPG"),
+      assetImport("./group3/IMG_0660.JPG"),
+      assetImport("./group3/IMG_0661.JPG"),
+      assetImport("./group3/IMG_0662.JPG"),
+      assetImport("./group3/IMG_0663.JPG"),
+      assetImport("./group3/IMG_0664.JPG"),
+      assetImport("./group3/IMG_0657.JPG"),
     ],
   },
   {
@@ -111,19 +109,19 @@ const clean = () => {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px; 
+  gap: 15px;
 }
 
 .images img {
-  width: 220px; 
+  width: 220px;
   height: auto;
-  border-radius: 8px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.images img:hover{
-  transform: scale(1.05); 
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+.images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 button {
   margin-top: 20px;
@@ -134,11 +132,9 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.2s ease; 
+  transition: background-color 0.2s ease;
 }
 button:hover {
   background-color: #0056b3;
 }
-
-
 </style>
