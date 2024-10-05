@@ -27,20 +27,23 @@
 
 <script setup name="PhotoList">
 import InfoCard from "./InfoCard.vue";
+import assetImport from '../utils/assetImport';
 import { ref } from "vue";
+const BASE_URL =  process.env.NODE_ENV === 'production' ? 'https://yangjun1453.github.io/Blogg/' : new URL(import.meta.url).origin;
+
 let cards = [
   {
     title: "Alpine Odyssey: Hiking Escapades",
     description:
       "Embark on a visual journey through the majestic mountains. Discover the thrill of hiking trails, the serenity of peaks, and the beauty of nature’s grandeur.",
     images: [
-      "/group1/IMG_0647.JPG",
-      "/group1/IMG_0648.JPG",
-      "/group1/IMG_0649.JPG",
-      "/group1/IMG_0650.JPG",
-      "/group1/IMG_0651.JPG",
-      "/group1/IMG_0652.JPG",
-      "/group1/IMG_0654.JPG",
+      assetImport("./group1/IMG_0647.JPG",BASE_URL),
+      new URL("./group1/IMG_0648.JPG",BASE_URL).href,
+      new URL("./group1/IMG_0649.JPG",BASE_URL).href,
+      new URL("./group1/IMG_0650.JPG",BASE_URL).href,
+      new URL("./group1/IMG_0651.JPG",BASE_URL).href,
+      new URL("./group1/IMG_0652.JPG",BASE_URL).href,
+      new URL("./group1/IMG_0654.JPG",BASE_URL).href,
       "/group1/IMG_0655.JPEG",
     ],
   },
@@ -54,16 +57,16 @@ let cards = [
     description:
       "Dive into a world where every shot tells a story. Experience photographs with a cinematic flair, invoking the magic and emotion of the silver screen.",
     images: [
-      "/group3/IMG_0656.JPG",
+      new URL("./group3/IMG_0656.JPG",BASE_URL).href,
      
-      "/group3/IMG_0658.JPG",
-      "/group3/IMG_0659.JPG",
-      "/group3/IMG_0660.JPG",
-      "/group3/IMG_0661.JPG",
-      "/group3/IMG_0662.JPG",
-      "/group3/IMG_0663.JPG",
-      "/group3/IMG_0664.JPG",
-      "/group3/IMG_0657.JPG",
+      new URL("./group3/IMG_0658.JPG",BASE_URL).href,
+      new URL("./group3/IMG_0659.JPG",BASE_URL).href,
+      new URL("./group3/IMG_0660.JPG",BASE_URL).href,
+      new URL("./group3/IMG_0661.JPG",BASE_URL).href,
+      new URL("./group3/IMG_0662.JPG",BASE_URL).href,
+      new URL("./group3/IMG_0663.JPG",BASE_URL).href,
+      new URL("./group3/IMG_0664.JPG",BASE_URL).href,
+      new URL("./group3/IMG_0657.JPG",BASE_URL).href,
  
     ],
   },
