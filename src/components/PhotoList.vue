@@ -12,7 +12,7 @@
         />
       </div>
 
-      <button @click="clean">back</button>
+      <button @click="clean">Назад</button>
     </div>
     <div v-else>
       <InfoCard
@@ -50,6 +50,16 @@ let cards = [
     title: "Мгновения повседневной жизни",
     description:
       "Мимолетные моменты из повседневной жизни, запечатленные на фотографиях. Эти кадры демонстрируют красоту в простых и обыденных вещах.",
+      images: [
+      assetImport("./group2/IMG_0733.JPG"),
+      assetImport("./group2/IMG_0734.JPG"),
+      assetImport("./group2/IMG_0735.JPG"),
+      assetImport("./group2/IMG_0736.JPG"),
+      assetImport("./group2/IMG_0737.JPG"),
+      assetImport("./group2/IMG_0738.JPG"),
+  
+      
+    ],
   },
   {
     title: "Мои работы",
@@ -72,7 +82,22 @@ let cards = [
     title: "Другие изображения (от Jun)",
     description:
       "Эксклюзивная подборка фотографий и моментов из жизни Jun, отражающих его уникальный взгляд на мир.",
-    images: ['../img/group1/2.jpg']
+      images: [
+      assetImport("./group4/2024-09-21 06_13_57.662.jpg"),
+      assetImport("./group4/hoga 2024-09-21 060628.324.jpg"),
+
+
+      assetImport("./group4/IMG_0144.JPEG"),
+      assetImport("./group4/IMG_0149.JPEG"),
+      assetImport("./group4/IMG_0151.JPEG"),
+      assetImport("./group4/IMG_0155.JPEG"),
+      assetImport("./group4/IMG_0158.JPEG"),
+      assetImport("./group4/IMG_0160.JPEG"),
+      assetImport("./group4/IMG_0289.JPEG"),
+
+  
+      
+    ],
   },
 ];
 const selectedCard = ref(null);
