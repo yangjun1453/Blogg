@@ -4,5 +4,5 @@ import VueSetupExtend from 'vite-plugin-vue-setup-extend'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(),VueSetupExtend() ],
-  publicDir: 'Blogg',
+  publicDir: 'https://yangjun1453.github.io/Blogg/',
 })
