@@ -2,7 +2,7 @@
   <div class="main">
     <img src="../assets/IMG_0479.png" alt="" />
     <h3>Ksenia</h3>
-    <p>An artist from Stavropol</p>
+    <p>Художник из Ставрополя</p>
     <div class="icon">
       <Github style="color: #8bd3dd" />
       <Instagram style="color: pink" />
@@ -49,13 +49,5 @@ import { Github, Instagram, Facebook } from "lucide-vue-next";
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-  .main img {
-    width: 70px;
-  }
 
-  .icon {
-    justify-content: center;
-  }
-}
 </style>

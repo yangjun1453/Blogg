@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h2>Skills</h2>
+    <h2>Навыки</h2>
     <ul>
       <li v-for="(item, index) in Lists" :key="index">
         {{ item }}
@@ -13,15 +13,15 @@
 import { ref } from "vue";
 
 const Lists = ref([
-  "Painting",
-  "Sculpting",
-  "Graphic Design",
-  "Photography",
-  "Art History",
+  "Живопись",
+  "Скульптура",
+  "Графический дизайн",
+  "Фотография",
+  "История искусства",
   "Adobe Photoshop",
   "Adobe Illustrator",
-  "Digital Illustration",
-  "Sketching",
+  "Цифровая иллюстрация",
+  "Эскизирование",
 ]);
 </script>
 
@@ -44,12 +44,8 @@ const Lists = ref([
   margin: 3px;
   border-radius: 13px;
 }
-
-@media (max-width: 768px) {
-  .main li {
-    padding: 8px;
-    margin: 5px;
-    font-size: 14px;
-  }
+h2{
+  margin-bottom: 10px;
 }
+
 </style>

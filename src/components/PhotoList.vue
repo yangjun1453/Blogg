@@ -1,5 +1,5 @@
 <template>
-  <h1>My photo lists</h1>
+  <h1>Мои списки фотографий</h1>
   <div class="main">
     <div v-if="selectedCard" class="image-gallery">
       <h3>{{ selectedCard.title }}</h3>
@@ -32,9 +32,9 @@ import { ref } from "vue";
 
 let cards = [
   {
-    title: "Alpine Odyssey: Hiking Escapades",
+    title: "Туризм в горах",
     description:
-      "Embark on a visual journey through the majestic mountains. Discover the thrill of hiking trails, the serenity of peaks, and the beauty of nature’s grandeur.",
+      "Погрузитесь в удивительный мир горных пейзажей и приключений. Каждая фотография передает величие природы и дух свободы в горах",
     images: [
       assetImport("./group1/IMG_0647.JPG"),
       assetImport("./group1/IMG_0648.JPG"),
@@ -47,14 +47,14 @@ let cards = [
     ],
   },
   {
-    title: "Self-Portrait Spectacle",
+    title: "Мгновения повседневной жизни",
     description:
-      "Explore a curated collection of selfies that capture my essence. Each photo tells a story, reflecting moments of joy, introspection, and personal style..",
+      "Мимолетные моменты из повседневной жизни, запечатленные на фотографиях. Эти кадры демонстрируют красоту в простых и обыденных вещах.",
   },
   {
-    title: "Frame by Frame: The Cinema of Life",
+    title: "Мои работы",
     description:
-      "Dive into a world where every shot tells a story. Experience photographs with a cinematic flair, invoking the magic and emotion of the silver screen.",
+      "Коллекция моих художественных произведений, включающая картины, рисунки и уникальные креативные проекты, раскрывающие мой творческий путь.",
     images: [
       assetImport("./group3/IMG_0656.JPG"),
 
@@ -69,10 +69,10 @@ let cards = [
     ],
   },
   {
-    title: "Culinary Delights: A Visual Feast”",
+    title: "Другие изображения (от Jun)",
     description:
-      "Indulge in a visual array of delectable dishes. This gastronomic gallery showcases the art of cooking and the beauty of food, stimulating both your eyes and appetite..",
-    // images: ['../img/group1/2.jpg']
+      "Эксклюзивная подборка фотографий и моментов из жизни Jun, отражающих его уникальный взгляд на мир.",
+    images: ['../img/group1/2.jpg']
   },
 ];
 const selectedCard = ref(null);
